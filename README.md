@@ -1,4 +1,4 @@
-﻿
+
 # 🏦 Bank Management System (JDBC Backend)
 
 A Java JDBC-based backend application designed to manage core banking operations such as account creation, deposits, withdrawals, balance enquiry, and transaction management using MySQL database integration.
@@ -39,6 +39,9 @@ This project focuses purely on **backend development** and database interaction.
 ---
 
 ## 📂 Project Structure
+
+```
+
 Bank-Management-System
 │
 ├── src/
@@ -50,6 +53,9 @@ Bank-Management-System
 │
 ├── README.md
 
+````
+
+---
 
 ## ⚙️ Database Setup
 
@@ -58,6 +64,54 @@ Bank-Management-System
 
 ```sql
 CREATE DATABASE bank_db;
+````
 
+3. Create required tables:
 
+```sql
+CREATE TABLE accounts(
+    account_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50),
+    balance DOUBLE
+);
+```
+
+4. Update database credentials in:
+
+```
+DBConnection.java
+```
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone repository
+
+```bash
+git clone https://github.com/HarshithaTD/bank-management-system-jdbc.git
+```
+
+2. Open project in Eclipse
+
+3. Configure MySQL database
+
+4. Run:
+
+```
+Main.java
+```
+
+---
+
+## 💡 Learning Outcomes
+
+* JDBC Database Connectivity
+* CRUD Operations
+* Backend Architecture Design
+* SQL Query Execution
+* Transaction Management
+* Exception Handling
+
+---
 
